@@ -4,16 +4,6 @@ import { createApp, h } from 'vue';
 import { createInertiaApp } from '@inertiajs/inertia-vue3';
 import { InertiaProgress } from '@inertiajs/progress';
 
-//試行錯誤したが、Vue3の書き方が↓の様子なので従った。
-import RecordTagsInput from './components/RecordTagsInput.vue'
-
-createApp({
-    components:{
-        RecordTagsInput
-    }
-}).mount('#app')
-//ここまでがVue導入で記載した範囲
-
 const appName = window.document.getElementsByTagName('title')[0]?.innerText || 'Laravel';
 
 createInertiaApp({
